@@ -1,0 +1,18 @@
+<?php
+//Cases of experiencing count is not an array
+//Convert the $variable into an array for the entire project
+//Seee example below
+
+$var = "id"; //this is a string
+
+count($var); //will give error $var is not an array
+
+//Fix
+
+// Convert $var into an array for entire project PHP 7
+
+if (!is_array($var)
+$var = [$var];
+endif;
+
+?>
